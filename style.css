@@ -1,0 +1,59 @@
+body {
+  background-color: #f4f5fa;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+main.container {
+  max-width: 900px;
+}
+
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  border-bottom: 1px solid #eee;
+}
+
+.summary-card .card-body {
+  padding: 1rem 1.25rem;
+}
+
+#totalIncome { color: #146c43; }
+#totalExpenses { color: #b02a37; }
+
+.badge-income,
+.badge-expense {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+}
+.badge-income { background-color: #198754; }
+.badge-expense { background-color: #dc3545; }
+
+.amount-income { color: #146c43; font-weight: 600; }
+.amount-expense { color: #b02a37; font-weight: 600; }
+
+.table th {
+  font-size: 0.75rem;
+}
+
+.table td,
+.table th {
+  white-space: nowrap;
+}
+
+.empty-row td {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #6c757d;
+}
+
+@media (max-width: 575.98px) {
+  main.container { padding-left: 0.75rem; padding-right: 0.75rem; }
+}
